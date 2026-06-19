@@ -1,16 +1,203 @@
-# React + Vite
+# 🎬 Movie Dashboard - TanStack Query
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern movie discovery application built with React, TanStack Query, Tailwind CSS, and TMDB API.
 
-Currently, two official plugins are available:
+This project explores real-world frontend data fetching patterns including caching, debounced search, infinite scrolling, prefetching, loading states, and query management using TanStack Query.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Screenshots
 
-## React Compiler
+### Home Page
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Home Page](./screenshots/home.png)
 
-## Expanding the ESLint configuration
+### Movie Details Page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Movie Details](./screenshots/details.png)
+
+---
+
+## 📸 Features
+
+### Movie Discovery
+
+* View trending movies
+* Search movies by title
+* Responsive movie grid layout
+* Movie details page
+
+### TanStack Query Concepts
+
+* Query Keys
+* Query Caching
+* Stale Time
+* Background Fetching
+* Infinite Queries
+* Prefetching
+* Error Handling
+* Loading States
+
+### User Experience
+
+* Debounced search input
+* Infinite scrolling
+* Loading skeletons
+* Empty state handling
+* Error state handling
+* Responsive UI
+* Movie detail prefetching on hover
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+
+### Data Fetching
+
+* TanStack Query
+
+### Routing
+
+* React Router DOM
+
+### API
+
+* TMDB API
+
+### Utilities
+
+* Lucide React
+* React Intersection Observer
+
+---
+
+## 📂 Project Structure
+
+src
+
+├── api
+
+│   ├── client.js
+
+│   ├── apiClient.js
+
+│   └── movieApi.js
+
+│
+
+├── components
+
+│   ├── EmptyState.jsx
+
+│   ├── MovieCard.jsx
+
+│   ├── MovieGrid.jsx
+
+│   ├── MovieGridSkeleton.jsx
+
+│   ├── MovieDetailsSkeleton.jsx
+
+│   └── SearchBar.jsx
+
+│
+
+├── hooks
+
+│   ├── useDebounce.js
+
+│   ├── useInfiniteMovies.js
+
+│   ├── useMovieDetails.js
+
+│   └── useMovies.js
+
+│
+
+├── pages
+
+│   └── MovieDetails.jsx
+
+│
+
+├── router
+
+│   └── index.jsx
+
+│
+
+├── App.jsx
+
+└── main.jsx
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Swethabura/movie-dashboard-tanstack-query.git
+```
+
+Navigate to the project
+
+```bash
+cd movie-dashboard-tanstack-query
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a .env file
+
+```env
+VITE_TMDB_API_KEY=YOUR_API_KEY
+```
+
+Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 What I Learned
+
+Through this project I explored:
+
+* TanStack Query fundamentals
+* Query caching and stale data management
+* Dynamic query keys
+* Infinite scrolling patterns
+* Debounced search implementation
+* API request optimization
+* Prefetching strategies
+* Loading and error state management
+* Scalable project structure
+
+---
+
+## 🔮 Future Improvements
+
+* Trending categories
+* Movie recommendations
+* Watchlist functionality
+* Theme switcher
+* Advanced filters
+* Search history
+
+---
+
+## 🙌 Acknowledgements
+
+Movie data provided by TMDB.
+
+Built for learning and exploring modern frontend data-fetching patterns using TanStack Query.
